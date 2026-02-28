@@ -1,0 +1,276 @@
+/* style.css - 12 Interasaun Layout */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    font-size: 10px;
+}
+
+.header {
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+
+.header h3 {
+    color: white;
+    margin: 0;
+    font-size: 18px;
+}
+
+.panel {
+    border-radius: 8px;
+    padding: 10px;
+    min-height: 420px;
+    max-height: 450px;
+    overflow-y: auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border: 2px solid #000;
+}
+
+/* Kór ba kada Interasaun */
+.panel-1 {
+    background-color: #660000;
+    color: white;
+}
+
+.panel-2 {
+    background-color: #8B4513;
+    color: white;
+}
+
+.panel-3 {
+    background-color: #4d4d4d;
+    color: white;
+}
+
+.panel-4 {
+    background-color: #006633;
+    color: white;
+}
+
+.panel-5 {
+    background-color: #003366;
+    color: white;
+}
+
+.panel-6 {
+    background-color: #663300;
+    color: white;
+}
+
+.panel-7 {
+    background-color: #330066;
+    color: white;
+}
+
+.panel-8 {
+    background-color: #660066;
+    color: white;
+}
+
+.panel-9 {
+    background-color: #006666;
+    color: white;
+}
+
+.panel-10 {
+    background-color: #666600;
+    color: white;
+}
+
+.panel-11 {
+    background-color: #663366;
+    color: white;
+}
+
+.panel-12 {
+    background-color: #336666;
+    color: white;
+}
+
+.panel h5 {
+    background-color: #000;
+    padding: 6px;
+    margin: -10px -10px 8px -10px;
+    border-radius: 6px 6px 0 0;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.location-item {
+    padding: 3px;
+    margin-bottom: 3px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 9px;
+}
+
+/* Kór item ba Interasaun 1 */
+.panel-1 .location-item {
+    background-color: #990000;
+}
+
+/* Kór item ba Interasaun 2-12 (amarelu) */
+.panel-2 .location-item,
+.panel-3 .location-item,
+.panel-4 .location-item,
+.panel-5 .location-item,
+.panel-6 .location-item,
+.panel-7 .location-item,
+.panel-8 .location-item,
+.panel-9 .location-item,
+.panel-10 .location-item,
+.panel-11 .location-item,
+.panel-12 .location-item {
+    background-color: #CCCC00;
+    color: #000;
+}
+
+.form-check-input {
+    cursor: pointer;
+    flex-shrink: 0;
+    width: 14px;
+    height: 14px;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 9px;
+    line-height: 1.2;
+}
+
+.distansia-input {
+    width: 40px;
+    text-align: center;
+    background-color: white;
+    color: #000;
+    font-size: 9px;
+    padding: 2px;
+    height: 20px;
+    flex-shrink: 0;
+    border: 1px solid #ccc;
+}
+
+.control-panel {
+    background-color: #000;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.control-panel h6 {
+    color: white;
+}
+
+.result-area {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.progress {
+    background-color: rgba(255,255,255,0.2);
+}
+
+.btn {
+    font-weight: 500;
+    font-size: 11px;
+}
+
+.btn-sm {
+    padding: 4px 8px;
+    font-size: 10px;
+}
+
+/* Kolor ba botão TOTAL */
+.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+    color: #000;
+}
+
+/* Checkbox checked state */
+.lok-check:checked + label {
+    font-weight: bold;
+}
+
+.lok-check:checked ~ .distansia-input {
+    background-color: #ffffcc;
+}
+
+/* Input total styling */
+input[id^="total_"] {
+    background-color: white;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Scroll bar styling */
+.panel::-webkit-scrollbar {
+    width: 6px;
+}
+
+.panel::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.1);
+    border-radius: 3px;
+}
+
+.panel::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.3);
+    border-radius: 3px;
+}
+
+.panel::-webkit-scrollbar-thumb:hover {
+    background: rgba(255,255,255,0.5);
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+    .col-xl-3 {
+        width: 33.333%;
+    }
+}
+
+@media (max-width: 992px) {
+    .col-lg-4 {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .col-md-6 {
+        width: 100%;
+    }
+    
+    .panel {
+        min-height: auto;
+        max-height: none;
+    }
+    
+    .location-item {
+        font-size: 8px;
+    }
+    
+    .distansia-input {
+        width: 35px;
+        font-size: 8px;
+    }
+}
+
+/* Alert Success Styling */
+.alert-success {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+    color: #155724;
+}
+
+/* Textarea styling */
+#resultaduTotal {
+    font-family: 'Courier New', monospace;
+    font-size: 11px;
+}
