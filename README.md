@@ -9,22 +9,6 @@
 
 ---
 
-## 📋 Table of Contents
-
-- [About](#-about)
-- [Features](#-features)
-- [Screenshots](#-screenshots)
-- [Installation](#-installation)
-- [Usage](#-usage)
-- [Database Schema](#-database-schema)
-- [Technology Stack](#-technology-stack)
-- [Project Structure](#-project-structure)
-- [Contributing](#-contributing)
-- [License](#-license)
-- [Author](#-author)
-
----
-
 ## 🔍 About
 
 **BFS Mapping System** is a web-based application designed to analyze and compare 12 different route intersections from **Becora Centro Residence** to **IPDC Campus** in Dili, Timor-Leste. 
@@ -84,4 +68,5 @@ The system implements the **Breadth-First Search (BFS)** algorithm to calculate 
 1. **Clone the repository**
    ```bash
    git clone https://github.com/yourusername/bfs-mapping.git
+
    cd bfs-mapping
