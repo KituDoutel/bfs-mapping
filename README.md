@@ -67,6 +67,7 @@ The system implements the **Breadth-First Search (BFS)** algorithm to calculate 
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/bfs-mapping.git
+   git clone https://github.com/KituDoutel/bfs-mapping.git
 
    cd bfs-mapping
+
